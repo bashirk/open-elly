@@ -91,8 +91,8 @@ export default async function handler(
   }
 
   try {
-    // Initialize the Bard
-    const API_KEY = process.env.BARD_KEY;
+    // Initialize Gemini
+    const API_KEY = process.env.GEMINI_KEY;
     const url = `https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=${API_KEY}`;
     const outputData = await fetch(url, {
       method: 'POST',

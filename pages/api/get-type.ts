@@ -46,7 +46,7 @@ export default async function handler(
 `;
 
     // Initialize the Gemini
-    const API_KEY = process.env.BARD_KEY;
+    const API_KEY = process.env.GEMINI_KEY;
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${API_KEY}`;
     
     const requestData = {
